@@ -1,0 +1,30 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lector de Voz</title>
+    <script src=".\voz.js"></script>
+    <link rel="stylesheet" href=".\voz.css">
+</head>
+
+<body>
+    <div class="containerS">
+        <h2>Lector de Voz</h2>
+        <select id="speech_select">
+            <option style="display: grid;"> --- Elige una voz ---</option>
+        </select>
+        <br><br>
+        <textarea id="speech-text" placeholder="Ingresa texto para leerlo"></textarea>
+
+        <button id="speech-btn">Leer texto</button>
+        <ol id="lista"> fraces</ol>
+        <button id="guardar-btn" onclick="Guardar()">Guardar Fraces</button>
+
+    </div>
+    <script>
+        speechReader();
+    </script>
+</body>
+
+</html>
